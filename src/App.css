@@ -1,22 +1,12 @@
-.App {
-  text-align: center;
+.app-wrapper {
+  display: grid;
 }
-
-.App-logo {
-  height: 40vmin;
+.header {
+  grid-area: h;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav {
+  grid-area: n;
 }
-
-.App-link {
-  color: #09d3ac;
+.content {
+  grid-area: c;
 }
