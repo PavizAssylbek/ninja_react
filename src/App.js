@@ -4,19 +4,22 @@ import Footer from "./components/footer/footer";
 import Saidebar from "./components/saidebar/saidebar";
 import Content from "./components/content/content";
 import Dialogs from "./components/dialogs/dialogs";
+import {Route, Switch} from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="app-wrapper">
-      <Header />
-      <Saidebar />
-      <div className="app-wrapper-content">
-        {/* <Content />  */}
-        <Dialogs />
-      </div>
-      <Footer />
-    </div>
+      <Switch>
+        <div className="app-wrapper">
+          <Header />
+          <Saidebar />
+          <div className="app-wrapper-content">
+              <Route path="/content" component={Content} />
+              <Route path="/dialogs" component={Dialogs} />
+          </div>
+          <Footer />
+        </div>
+     </Switch>
   );
 }
 
