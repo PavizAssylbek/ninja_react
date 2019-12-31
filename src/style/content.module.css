@@ -1,0 +1,11 @@
+.df {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.df input {
+  height: 20px;
+  font-size: 20px;
+}
+

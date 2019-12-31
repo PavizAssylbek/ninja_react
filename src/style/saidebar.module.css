@@ -1,0 +1,15 @@
+.nav {
+  grid-area: n;
+  background-color: burlywood;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.item {
+  color: #fff;
+}
+.item.active {
+  color: gold;
+}
